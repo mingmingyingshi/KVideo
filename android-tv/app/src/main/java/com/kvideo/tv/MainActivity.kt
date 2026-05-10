@@ -275,8 +275,9 @@ class MainActivity : ComponentActivity() {
             return savedUrl
         }
 
-        val defaultUrl = normalizeUrl(BuildConfig.DEFAULT_KVIDEO_URL)
-        return if (isValidUrl(defaultUrl)) defaultUrl else ""
+        // 直接把你的网址写在引号里
+    val defaultUrl = "https://mingmovie.ccwu.cc"
+    return defaultUrl
     }
 
     private fun isSetupVisible(): Boolean = setupContainer.visibility == View.VISIBLE
